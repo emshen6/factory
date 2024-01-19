@@ -7,6 +7,7 @@ import { useGetProductsQuery } from '../../../core/api/product';
 import { FactoryImage } from '../../../assets/image/FactoryImage';
 import { ContentWrapper } from '../../components/ContentWrapper';
 import { Header } from '../../components/Header';
+import { Footer } from '../../components/Footer/index.tsx';
 
 const cx = classNames.bind(styles);
 
@@ -20,6 +21,9 @@ export const Landing: React.FC = () => {
                 <Header />
                 <FactoryImage />
             </ContentWrapper>
+            <div className={'container block'}></div>
+            <Icon icon={ICON.LOGO} width={175} height={55} color={'black'} />
+            <Footer />
         </div>
     );
 };
